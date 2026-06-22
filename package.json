@@ -1,0 +1,56 @@
+{
+  "name": "git-helper-ui",
+  "publisher": "talhaibne",
+  "displayName": "git-helper-ui",
+  "description": "UI based git push & pull helper",
+  "version": "1.0.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/talhaibne/git-helper-ui.git"
+  },
+  "homepage": "https://github.com/talhaibne/git-helper-ui",
+  "bugs": {
+    "url": "https://github.com/talhaibne/git-helper-ui/issues"
+  },
+
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+
+  "categories": ["Other"],
+
+  "activationEvents": [
+    "*",
+    "onView:gitHelperView"
+  ],
+
+  "main": "./extension.js",
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "git-helper-ui.ping",
+        "title": "Git Helper: Ping"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "git-helper",
+          "title": "Git Helper",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "git-helper": [
+        {
+          "id": "gitHelperView",
+          "name": "Developed by Md Talha Ibne Anwar",
+          "type": "webview"
+        }
+      ]
+    }
+  }
+}
