@@ -1,0 +1,1 @@
+This is a git helper extension for easy push and pull of git repo
